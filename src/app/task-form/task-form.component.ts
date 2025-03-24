@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { FormsModule, NgModel } from '@angular/forms';
 import { TaskService } from '../shared/task.service';
 import { CommonModule } from '@angular/common';
+import { SharedModule } from '../shared/shared.module';
 
 @Component({
   selector: 'app-task-form',
-  imports: [FormsModule, CommonModule],
+  imports: [SharedModule],
   templateUrl: './task-form.component.html',
   styleUrl: './task-form.component.css',
 })
