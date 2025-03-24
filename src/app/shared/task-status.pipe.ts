@@ -1,7 +1,8 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'taskStatus'
+  name: 'taskStatus',
+  standalone: false,
 })
 export class TaskStatusPipe implements PipeTransform {
 
