@@ -1,1 +1,5 @@
-<p>notification works!</p>
+@if (message()) {
+  <div class="messageCard">
+    <p>{{ message() }}</p>
+  </div>
+}
